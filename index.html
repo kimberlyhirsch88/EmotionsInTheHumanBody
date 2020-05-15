@@ -4,13 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
-<body>
 
+<body>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="Assignment1.html" class="w3-bar-item w3-button"><b>EMOTIONS</b> in the human body</a>
+    <a href="index.html" class="w3-bar-item w3-button"><b>EMOTIONS</b> in the human body</a>
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
       <a href="#vizualization" class="w3-bar-item w3-button">Vizualization</a>
@@ -24,6 +24,7 @@
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
   <img class="w3-image" src="landing.png" alt="Architecture" width="1500" height="800">
 </header>
+
 
 <!-- Page content -->
 <div class="w3-content w3-padding" style="max-width:1564px">
@@ -42,25 +43,115 @@
   <div class="iframe" style="width: 1000px; height: 700px; overflow: hidden">
   <iframe style="border: none; position: relative; bottom: 250px;" width="1000" height="1200" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FO9wAhWPdBLGQQzOXCf1Obq%2FBodyMap-Test%3Fnode-id%3D1%253A2%26scaling%3Dscale-down-width%26hotspot-hints%3D0"></iframe>
 </div>
-  <img class="w3-image" src="Visualization.png" alt="Architecture" width="1000" height="3500">
 </div>
 
-
-  <!-- About Section -->
-  <div class="w3-container w3-padding-32" id="about">
-    <img class="w3-image" src="About.png" alt="Architecture" width="1000" height="500">
-  </div>
 
 
 <!-- End page content -->
 </div>
 
 
+
+<div class="w3-container w3-padding-32" style="width: 650px; height: 800px; margin: auto;" id="radarChartToggle">
+
+  <h1 style= "text-align: center;">What Sensations Do People Feel?</h1>
+  <p style= "text-align: center;">View the raw reported physiological reactions for each emotion. Are these reactions similar to what you may feel? Try comparing the shapes of the "positive" and "negative" emotions!</p>
+
+  <br><br><br>
+  <label class="switch">
+    <input type="checkbox" checked onclick="myFunction2()">
+    <span class="slider round"></span>
+  </label>
+  <p style="display:inline; color:#FF737F;">Discouraged</p>
+  
+  <label class="switch">
+    <input type="checkbox" checked onclick="myFunction3()">
+    <span class="slidergreen round"></span>
+  </label>
+  <p style="display:inline; color:#86D69D;">Frustrated</p>
+  
+  <label class="switch">
+    <input type="checkbox" checked onclick="myFunction4()">
+    <span class="sliderblue round"></span>
+  </label>
+  <p style="display:inline; color:#66C8FF;">Grateful</p>
+  
+  <label class="switch">
+    <input type="checkbox" checked onclick="myFunction()">
+    <span class="slideryellow round"></span>
+  </label>
+  <p style="display:inline; color:#FFD752;">Enthusiastic</p>
+
+<br><br><br>
+<div id="myDIV">
+  <img class="w3-image" style="position: absolute" src="yellow.png" alt="Architecture" width="650" height="600">
+</div>
+
+<div id="myDIV2">
+  <img class="w3-image" style="position: absolute" src="red.png" alt="Architecture" width="650" height="600">
+</div>
+
+<div id="myDIV3">
+  <img class="w3-image" style="position: absolute" src="green.png" alt="Architecture" width="650" height="600">
+</div>
+
+<div id="myDIV4">
+  <img class="w3-image" style="position: absolute" src="blue.png" alt="Architecture" width="650" height="600">
+</div>
+
+<div id="myDIV5">
+  <img class="w3-image" style="position: absolute" src="none.png" alt="Architecture" width="650" height="600">
+</div>
+
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function myFunction2() {
+  var x = document.getElementById("myDIV2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function myFunction3() {
+  var x = document.getElementById("myDIV3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function myFunction4() {
+  var x = document.getElementById("myDIV4");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <img class="w3-image" src="About.png" alt="Architecture" width="1000" height="500">
+  </div>
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-16">
-  <p>Emotions In The Human Body</p>
+  <p>Github | Full Project Documentation | Top of Page</p>
 </footer>
-<script src= "main.js" type="text/javascript" ></script>
+<!--<script src= "main.js" type="text/javascript" ></script>-->
 </body>
 </html>
 
